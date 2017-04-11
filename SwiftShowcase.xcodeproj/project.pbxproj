@@ -13,7 +13,29 @@
 		629DCFD81E40737D00C1D4FF /* SwiftShowcase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 629DCFD61E40737D00C1D4FF /* SwiftShowcase.xcdatamodeld */; };
 		629DCFDA1E40737D00C1D4FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629DCFD91E40737D00C1D4FF /* Assets.xcassets */; };
 		629DCFDD1E40737D00C1D4FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629DCFDB1E40737D00C1D4FF /* LaunchScreen.storyboard */; };
+		629DCFE51E4319E700C1D4FF /* AppListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629DCFE41E4319E700C1D4FF /* AppListCollectionViewCell.swift */; };
+		629DD0441E4B3A3F00C1D4FF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629DD0411E4B3A3F00C1D4FF /* Alamofire.framework */; };
+		629DD0451E4B3A3F00C1D4FF /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629DD0421E4B3A3F00C1D4FF /* AlamofireImage.framework */; };
+		629DD0461E4B3A3F00C1D4FF /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629DD0431E4B3A3F00C1D4FF /* SwiftyJSON.framework */; };
+		629DD0481E4B3A6200C1D4FF /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 629DD0411E4B3A3F00C1D4FF /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		629DD0491E4B3A6200C1D4FF /* AlamofireImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 629DD0421E4B3A3F00C1D4FF /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		629DD04A1E4B3A6200C1D4FF /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 629DD0431E4B3A3F00C1D4FF /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		629DD0471E4B3A4900C1D4FF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				629DD0481E4B3A6200C1D4FF /* Alamofire.framework in CopyFiles */,
+				629DD0491E4B3A6200C1D4FF /* AlamofireImage.framework in CopyFiles */,
+				629DD04A1E4B3A6200C1D4FF /* SwiftyJSON.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		629DCFCC1E40737D00C1D4FF /* SwiftShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +46,10 @@
 		629DCFD91E40737D00C1D4FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		629DCFDC1E40737D00C1D4FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		629DCFDE1E40737D00C1D4FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629DCFE41E4319E700C1D4FF /* AppListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppListCollectionViewCell.swift; sourceTree = "<group>"; };
+		629DD0411E4B3A3F00C1D4FF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		629DD0421E4B3A3F00C1D4FF /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		629DD0431E4B3A3F00C1D4FF /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629DD0441E4B3A3F00C1D4FF /* Alamofire.framework in Frameworks */,
+				629DD0451E4B3A3F00C1D4FF /* AlamofireImage.framework in Frameworks */,
+				629DD0461E4B3A3F00C1D4FF /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +71,7 @@
 			children = (
 				629DCFCE1E40737D00C1D4FF /* SwiftShowcase */,
 				629DCFCD1E40737D00C1D4FF /* Products */,
+				629DD0401E4B3A3F00C1D4FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +88,7 @@
 			children = (
 				629DCFCF1E40737D00C1D4FF /* AppDelegate.swift */,
 				629DCFD11E40737D00C1D4FF /* ViewController.swift */,
+				629DCFE41E4319E700C1D4FF /* AppListCollectionViewCell.swift */,
 				629DCFD31E40737D00C1D4FF /* Main.storyboard */,
 				629DCFD91E40737D00C1D4FF /* Assets.xcassets */,
 				629DCFDB1E40737D00C1D4FF /* LaunchScreen.storyboard */,
@@ -65,6 +96,16 @@
 				629DCFD61E40737D00C1D4FF /* SwiftShowcase.xcdatamodeld */,
 			);
 			path = SwiftShowcase;
+			sourceTree = "<group>";
+		};
+		629DD0401E4B3A3F00C1D4FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				629DD0411E4B3A3F00C1D4FF /* Alamofire.framework */,
+				629DD0421E4B3A3F00C1D4FF /* AlamofireImage.framework */,
+				629DD0431E4B3A3F00C1D4FF /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +118,7 @@
 				629DCFC81E40737D00C1D4FF /* Sources */,
 				629DCFC91E40737D00C1D4FF /* Frameworks */,
 				629DCFCA1E40737D00C1D4FF /* Resources */,
+				629DD0471E4B3A4900C1D4FF /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -142,6 +184,7 @@
 			files = (
 				629DCFD81E40737D00C1D4FF /* SwiftShowcase.xcdatamodeld in Sources */,
 				629DCFD21E40737D00C1D4FF /* ViewController.swift in Sources */,
+				629DCFE51E4319E700C1D4FF /* AppListCollectionViewCell.swift in Sources */,
 				629DCFD01E40737D00C1D4FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +309,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PM7352S8QE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftShowcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ameya.SwiftShowcase;
@@ -279,6 +326,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PM7352S8QE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SwiftShowcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ameya.SwiftShowcase;
@@ -306,6 +357,7 @@
 				629DCFE31E40737D00C1D4FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
